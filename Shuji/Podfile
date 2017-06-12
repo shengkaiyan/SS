@@ -2,4 +2,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Shuji' do
     pod 'GoogleMaps', '= 2.3.0'
+    pod 'AFNetworking’
 end

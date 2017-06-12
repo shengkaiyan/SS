@@ -12,11 +12,24 @@
 
 @end
 
+AppDelegate *appDelegate = nil;
+
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    appDelegate = self;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    self.mainViewController = [[MainViewController alloc] init];
+    self.window.rootViewController = self.mainViewController;
+    
     return YES;
 }
 

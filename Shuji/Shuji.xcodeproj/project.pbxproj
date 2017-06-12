@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4501FFD792475A9660137A /* libPods-Shuji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D152AFB1E905CB67A33A84 /* libPods-Shuji.a */; };
 		33E7BFF81EEED06B0047FDCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7BFF71EEED06B0047FDCB /* main.m */; };
 		33E7BFFB1EEED06B0047FDCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7BFFA1EEED06B0047FDCB /* AppDelegate.m */; };
 		33E7BFFE1EEED06B0047FDCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7BFFD1EEED06B0047FDCB /* ViewController.m */; };
-		33E7C0011EEED06B0047FDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E7BFFF1EEED06B0047FDCB /* Main.storyboard */; };
 		33E7C0031EEED06B0047FDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E7C0021EEED06B0047FDCB /* Assets.xcassets */; };
 		33E7C0061EEED06B0047FDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E7C0041EEED06B0047FDCB /* LaunchScreen.storyboard */; };
 		33E7C0111EEED06B0047FDCB /* ShujiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C0101EEED06B0047FDCB /* ShujiTests.m */; };
 		33E7C01C1EEED06B0047FDCB /* ShujiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C01B1EEED06B0047FDCB /* ShujiUITests.m */; };
+		33E7C02B1EEEDB940047FDCB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C02A1EEEDB940047FDCB /* BaseViewController.m */; };
+		33E7C02E1EEEDBBE0047FDCB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C02D1EEEDBBE0047FDCB /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08850A94F79AC540A2838C04 /* Pods-Shuji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shuji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shuji/Pods-Shuji.debug.xcconfig"; sourceTree = "<group>"; };
 		33E7BFF31EEED06B0047FDCB /* Shuji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shuji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E7BFF71EEED06B0047FDCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33E7BFF91EEED06B0047FDCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33E7BFFA1EEED06B0047FDCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33E7BFFC1EEED06B0047FDCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33E7BFFD1EEED06B0047FDCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		33E7C0001EEED06B0047FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33E7C0021EEED06B0047FDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E7C0051EEED06B0047FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33E7C0071EEED06B0047FDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,12 @@
 		33E7C0171EEED06B0047FDCB /* ShujiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShujiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E7C01B1EEED06B0047FDCB /* ShujiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShujiUITests.m; sourceTree = "<group>"; };
 		33E7C01D1EEED06B0047FDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E7C0291EEEDB940047FDCB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Classes/BaseViewController.h; sourceTree = "<group>"; };
+		33E7C02A1EEEDB940047FDCB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Classes/BaseViewController.m; sourceTree = "<group>"; };
+		33E7C02C1EEEDBBE0047FDCB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		33E7C02D1EEEDBBE0047FDCB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		8AC78FAAA97A979B3653A822 /* Pods-Shuji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shuji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shuji/Pods-Shuji.release.xcconfig"; sourceTree = "<group>"; };
+		C7D152AFB1E905CB67A33A84 /* libPods-Shuji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shuji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4501FFD792475A9660137A /* libPods-Shuji.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,8 @@
 				33E7C00F1EEED06B0047FDCB /* ShujiTests */,
 				33E7C01A1EEED06B0047FDCB /* ShujiUITests */,
 				33E7BFF41EEED06B0047FDCB /* Products */,
+				3583BF12B5804C84D78BFF89 /* Pods */,
+				9D1C4583E3F2EDD9896FAEE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +114,12 @@
 			children = (
 				33E7BFF91EEED06B0047FDCB /* AppDelegate.h */,
 				33E7BFFA1EEED06B0047FDCB /* AppDelegate.m */,
+				33E7C0291EEEDB940047FDCB /* BaseViewController.h */,
+				33E7C02A1EEEDB940047FDCB /* BaseViewController.m */,
+				33E7C02C1EEEDBBE0047FDCB /* MainViewController.h */,
+				33E7C02D1EEEDBBE0047FDCB /* MainViewController.m */,
 				33E7BFFC1EEED06B0047FDCB /* ViewController.h */,
 				33E7BFFD1EEED06B0047FDCB /* ViewController.m */,
-				33E7BFFF1EEED06B0047FDCB /* Main.storyboard */,
 				33E7C0021EEED06B0047FDCB /* Assets.xcassets */,
 				33E7C0041EEED06B0047FDCB /* LaunchScreen.storyboard */,
 				33E7C0071EEED06B0047FDCB /* Info.plist */,
@@ -140,6 +154,23 @@
 			path = ShujiUITests;
 			sourceTree = "<group>";
 		};
+		3583BF12B5804C84D78BFF89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08850A94F79AC540A2838C04 /* Pods-Shuji.debug.xcconfig */,
+				8AC78FAAA97A979B3653A822 /* Pods-Shuji.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D1C4583E3F2EDD9896FAEE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D152AFB1E905CB67A33A84 /* libPods-Shuji.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33E7C0201EEED06B0047FDCB /* Build configuration list for PBXNativeTarget "Shuji" */;
 			buildPhases = (
+				E75A6CC81186C5B15120B866 /* [CP] Check Pods Manifest.lock */,
 				33E7BFEF1EEED06B0047FDCB /* Sources */,
 				33E7BFF01EEED06B0047FDCB /* Frameworks */,
 				33E7BFF11EEED06B0047FDCB /* Resources */,
+				43D19E098A795312329340B0 /* [CP] Embed Pods Frameworks */,
+				EC96CE801FF1D01BD8158ABC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,7 +282,6 @@
 			files = (
 				33E7C0061EEED06B0047FDCB /* LaunchScreen.storyboard in Resources */,
 				33E7C0031EEED06B0047FDCB /* Assets.xcassets in Resources */,
-				33E7C0011EEED06B0047FDCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +301,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43D19E098A795312329340B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shuji/Pods-Shuji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75A6CC81186C5B15120B866 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC96CE801FF1D01BD8158ABC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shuji/Pods-Shuji-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33E7BFEF1EEED06B0047FDCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				33E7BFFE1EEED06B0047FDCB /* ViewController.m in Sources */,
+				33E7C02B1EEEDB940047FDCB /* BaseViewController.m in Sources */,
 				33E7BFFB1EEED06B0047FDCB /* AppDelegate.m in Sources */,
+				33E7C02E1EEEDBBE0047FDCB /* MainViewController.m in Sources */,
 				33E7BFF81EEED06B0047FDCB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +394,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		33E7BFFF1EEED06B0047FDCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33E7C0001EEED06B0047FDCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		33E7C0041EEED06B0047FDCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -420,6 +495,7 @@
 		};
 		33E7C0211EEED06B0047FDCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08850A94F79AC540A2838C04 /* Pods-Shuji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Shuji/Info.plist;
@@ -431,6 +507,7 @@
 		};
 		33E7C0221EEED06B0047FDCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC78FAAA97A979B3653A822 /* Pods-Shuji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Shuji/Info.plist;
@@ -505,6 +582,7 @@
 				33E7C0221EEED06B0047FDCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33E7C0231EEED06B0047FDCB /* Build configuration list for PBXNativeTarget "ShujiTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +591,7 @@
 				33E7C0251EEED06B0047FDCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33E7C0261EEED06B0047FDCB /* Build configuration list for PBXNativeTarget "ShujiUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +600,7 @@
 				33E7C0281EEED06B0047FDCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
