@@ -28,8 +28,10 @@ AppDelegate *appDelegate = nil;
     [self.window makeKeyAndVisible];
     
     self.mainViewController = [[MainViewController alloc] init];
-    self.window.rootViewController = self.mainViewController;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: self.mainViewController];
+    self.window.rootViewController = nav;
     
+    appDelegate.common = [Common CommonInstance];
     return YES;
 }
 

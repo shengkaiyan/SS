@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
+#import "Common.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) MainViewController *mainViewController;
+@property (strong, nonatomic) Common *common;
 
 extern AppDelegate *appDelegate;
 

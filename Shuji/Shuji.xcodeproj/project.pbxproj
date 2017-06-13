@@ -12,11 +12,18 @@
 		33E7BFFB1EEED06B0047FDCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7BFFA1EEED06B0047FDCB /* AppDelegate.m */; };
 		33E7BFFE1EEED06B0047FDCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7BFFD1EEED06B0047FDCB /* ViewController.m */; };
 		33E7C0031EEED06B0047FDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E7C0021EEED06B0047FDCB /* Assets.xcassets */; };
-		33E7C0061EEED06B0047FDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E7C0041EEED06B0047FDCB /* LaunchScreen.storyboard */; };
 		33E7C0111EEED06B0047FDCB /* ShujiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C0101EEED06B0047FDCB /* ShujiTests.m */; };
 		33E7C01C1EEED06B0047FDCB /* ShujiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C01B1EEED06B0047FDCB /* ShujiUITests.m */; };
 		33E7C02B1EEEDB940047FDCB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C02A1EEEDB940047FDCB /* BaseViewController.m */; };
 		33E7C02E1EEEDBBE0047FDCB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C02D1EEEDBBE0047FDCB /* MainViewController.m */; };
+		33FD48DB1EF01421009F97BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33FD48DD1EF01421009F97BD /* Localizable.strings */; };
+		33FD48E11EF0172C009F97BD /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48E01EF0172C009F97BD /* NetViewController.m */; };
+		33FD48E41EF019A8009F97BD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48E31EF019A8009F97BD /* TableViewController.m */; };
+		33FD48E81EF01AD6009F97BD /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48E71EF01AD6009F97BD /* BaseModel.m */; };
+		33FD48EB1EF01B0C009F97BD /* NetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48EA1EF01B0C009F97BD /* NetModel.m */; };
+		33FD48EE1EF01D36009F97BD /* Common.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48EC1EF01D36009F97BD /* Common.mm */; };
+		33FD48F11EF02B81009F97BD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48F01EF02B81009F97BD /* LoginViewController.m */; };
+		33FD48F41EF02DCC009F97BD /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD48F31EF02DCC009F97BD /* LoginModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +52,6 @@
 		33E7BFFC1EEED06B0047FDCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33E7BFFD1EEED06B0047FDCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33E7C0021EEED06B0047FDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		33E7C0051EEED06B0047FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33E7C0071EEED06B0047FDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E7C00C1EEED06B0047FDCB /* ShujiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShujiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E7C0101EEED06B0047FDCB /* ShujiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShujiTests.m; sourceTree = "<group>"; };
@@ -57,6 +63,22 @@
 		33E7C02A1EEEDB940047FDCB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Classes/BaseViewController.m; sourceTree = "<group>"; };
 		33E7C02C1EEEDBBE0047FDCB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		33E7C02D1EEEDBBE0047FDCB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		33FD48DC1EF01421009F97BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33FD48DE1EF01490009F97BD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		33FD48DF1EF0172C009F97BD /* NetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetViewController.h; path = Classes/NetViewController.h; sourceTree = "<group>"; };
+		33FD48E01EF0172C009F97BD /* NetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetViewController.m; path = Classes/NetViewController.m; sourceTree = "<group>"; };
+		33FD48E21EF019A8009F97BD /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = Classes/TableViewController.h; sourceTree = "<group>"; };
+		33FD48E31EF019A8009F97BD /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = Classes/TableViewController.m; sourceTree = "<group>"; };
+		33FD48E61EF01AD5009F97BD /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = Classes/BaseModel.h; sourceTree = "<group>"; };
+		33FD48E71EF01AD6009F97BD /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = Classes/BaseModel.m; sourceTree = "<group>"; };
+		33FD48E91EF01B0C009F97BD /* NetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetModel.h; path = Classes/NetModel.h; sourceTree = "<group>"; };
+		33FD48EA1EF01B0C009F97BD /* NetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetModel.m; path = Classes/NetModel.m; sourceTree = "<group>"; };
+		33FD48EC1EF01D36009F97BD /* Common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Common.mm; path = Classes/Common.mm; sourceTree = "<group>"; };
+		33FD48ED1EF01D36009F97BD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Classes/Common.h; sourceTree = "<group>"; };
+		33FD48EF1EF02B81009F97BD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Classes/LoginViewController.h; sourceTree = "<group>"; };
+		33FD48F01EF02B81009F97BD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Classes/LoginViewController.m; sourceTree = "<group>"; };
+		33FD48F21EF02DCC009F97BD /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginModel.h; path = Classes/LoginModel.h; sourceTree = "<group>"; };
+		33FD48F31EF02DCC009F97BD /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginModel.m; path = Classes/LoginModel.m; sourceTree = "<group>"; };
 		8AC78FAAA97A979B3653A822 /* Pods-Shuji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shuji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shuji/Pods-Shuji.release.xcconfig"; sourceTree = "<group>"; };
 		C7D152AFB1E905CB67A33A84 /* libPods-Shuji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shuji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,14 +136,16 @@
 			children = (
 				33E7BFF91EEED06B0047FDCB /* AppDelegate.h */,
 				33E7BFFA1EEED06B0047FDCB /* AppDelegate.m */,
-				33E7C0291EEEDB940047FDCB /* BaseViewController.h */,
-				33E7C02A1EEEDB940047FDCB /* BaseViewController.m */,
+				33FD48E51EF019E5009F97BD /* Basis */,
 				33E7C02C1EEEDBBE0047FDCB /* MainViewController.h */,
 				33E7C02D1EEEDBBE0047FDCB /* MainViewController.m */,
+				33FD48EF1EF02B81009F97BD /* LoginViewController.h */,
+				33FD48F01EF02B81009F97BD /* LoginViewController.m */,
+				33FD48F21EF02DCC009F97BD /* LoginModel.h */,
+				33FD48F31EF02DCC009F97BD /* LoginModel.m */,
 				33E7BFFC1EEED06B0047FDCB /* ViewController.h */,
 				33E7BFFD1EEED06B0047FDCB /* ViewController.m */,
 				33E7C0021EEED06B0047FDCB /* Assets.xcassets */,
-				33E7C0041EEED06B0047FDCB /* LaunchScreen.storyboard */,
 				33E7C0071EEED06B0047FDCB /* Info.plist */,
 				33E7BFF61EEED06B0047FDCB /* Supporting Files */,
 			);
@@ -132,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				33E7BFF71EEED06B0047FDCB /* main.m */,
+				33FD48DD1EF01421009F97BD /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +177,25 @@
 				33E7C01D1EEED06B0047FDCB /* Info.plist */,
 			);
 			path = ShujiUITests;
+			sourceTree = "<group>";
+		};
+		33FD48E51EF019E5009F97BD /* Basis */ = {
+			isa = PBXGroup;
+			children = (
+				33E7C0291EEEDB940047FDCB /* BaseViewController.h */,
+				33E7C02A1EEEDB940047FDCB /* BaseViewController.m */,
+				33FD48DF1EF0172C009F97BD /* NetViewController.h */,
+				33FD48E01EF0172C009F97BD /* NetViewController.m */,
+				33FD48E21EF019A8009F97BD /* TableViewController.h */,
+				33FD48E31EF019A8009F97BD /* TableViewController.m */,
+				33FD48ED1EF01D36009F97BD /* Common.h */,
+				33FD48EC1EF01D36009F97BD /* Common.mm */,
+				33FD48E61EF01AD5009F97BD /* BaseModel.h */,
+				33FD48E71EF01AD6009F97BD /* BaseModel.m */,
+				33FD48E91EF01B0C009F97BD /* NetModel.h */,
+				33FD48EA1EF01B0C009F97BD /* NetModel.m */,
+			);
+			name = Basis;
 			sourceTree = "<group>";
 		};
 		3583BF12B5804C84D78BFF89 /* Pods */ = {
@@ -262,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 33E7BFEA1EEED06B0047FDCB;
 			productRefGroup = 33E7BFF41EEED06B0047FDCB /* Products */;
@@ -280,8 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33E7C0061EEED06B0047FDCB /* LaunchScreen.storyboard in Resources */,
 				33E7C0031EEED06B0047FDCB /* Assets.xcassets in Resources */,
+				33FD48DB1EF01421009F97BD /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +400,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E7BFFE1EEED06B0047FDCB /* ViewController.m in Sources */,
+				33FD48EB1EF01B0C009F97BD /* NetModel.m in Sources */,
 				33E7C02B1EEEDB940047FDCB /* BaseViewController.m in Sources */,
+				33FD48E81EF01AD6009F97BD /* BaseModel.m in Sources */,
+				33FD48E11EF0172C009F97BD /* NetViewController.m in Sources */,
+				33FD48F41EF02DCC009F97BD /* LoginModel.m in Sources */,
 				33E7BFFB1EEED06B0047FDCB /* AppDelegate.m in Sources */,
 				33E7C02E1EEEDBBE0047FDCB /* MainViewController.m in Sources */,
+				33FD48E41EF019A8009F97BD /* TableViewController.m in Sources */,
+				33FD48EE1EF01D36009F97BD /* Common.mm in Sources */,
+				33FD48F11EF02B81009F97BD /* LoginViewController.m in Sources */,
 				33E7BFF81EEED06B0047FDCB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,12 +446,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		33E7C0041EEED06B0047FDCB /* LaunchScreen.storyboard */ = {
+		33FD48DD1EF01421009F97BD /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				33E7C0051EEED06B0047FDCB /* Base */,
+				33FD48DC1EF01421009F97BD /* en */,
+				33FD48DE1EF01490009F97BD /* zh-Hans */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -456,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

@@ -1,36 +1,34 @@
 //
-//  MainViewController.m
+//  LoginViewController.m
 //  Shuji
 //
-//  Created by sky on 2017/6/12.
+//  Created by sky on 2017/6/13.
 //  Copyright © 2017年 sky. All rights reserved.
 //
 
-#import "MainViewController.h"
 #import "LoginViewController.h"
+#import "LoginModel.h"
 
-@interface MainViewController ()
-
+@interface LoginViewController ()
+{
+    LoginModel *_logingModel;
+}
 @end
 
-@implementation MainViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIButton *btn = [UIButton buttonWithType: UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 100, 300, 40);
-    [btn addTarget: self action: @selector(login) forControlEvents: UIControlEventTouchUpInside];
-    [self.view addSubview: btn];
+    UILabel *lb = [[UILabel alloc] initWithFrame: CGRectMake(0, 100, 300, 40)];
+    lb.text = NSLocalizedString(@"hello", @"world");
+    [self.view addSubview: lb];
     
-    btn.backgroundColor = [UIColor redColor];
-}
-
-- (void)login
-{
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    [self.navigationController pushViewController: loginViewController animated: YES];
+    self.view.backgroundColor = [UIColor redColor];
+    
+    _logingModel = [[LoginModel alloc] init];
+    self.model = _logingModel;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -41,6 +39,8 @@
 {
     [super viewWillDisappear:animated];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

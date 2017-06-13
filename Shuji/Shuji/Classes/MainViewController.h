@@ -6,8 +6,8 @@
 //  Copyright © 2017年 sky. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "NetViewController.h"
 
-@interface MainViewController : BaseViewController
+@interface MainViewController : NetViewController
 
 @end

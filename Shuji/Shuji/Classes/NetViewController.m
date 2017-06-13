@@ -1,45 +1,36 @@
 //
-//  MainViewController.m
+//  NetViewController.m
 //  Shuji
 //
-//  Created by sky on 2017/6/12.
+//  Created by sky on 2017/6/13.
 //  Copyright © 2017年 sky. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "LoginViewController.h"
+#import "NetViewController.h"
+#import "AppDelegate.h"
 
-@interface MainViewController ()
+@interface NetViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation NetViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    UIButton *btn = [UIButton buttonWithType: UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 100, 300, 40);
-    [btn addTarget: self action: @selector(login) forControlEvents: UIControlEventTouchUpInside];
-    [self.view addSubview: btn];
-    
-    btn.backgroundColor = [UIColor redColor];
-}
-
-- (void)login
-{
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    [self.navigationController pushViewController: loginViewController animated: YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+
+    appDelegate.common.updateUIViewController = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+
+    appDelegate.common.updateUIViewController = nil;
 }
 
 - (void)didReceiveMemoryWarning {
