@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shuji/Classes/Common.mm"
-            timestampString = "519056633.569941"
+            timestampString = "519142307.045709"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "dispatch_once(&amp;pred, ^{ sharedInstance = [[Common alloc] init]; [[AFNetworkReachabilityManager sharedManager]setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) { if (status &lt;= AFNetworkReachabilityStatusNotReachable) { NSLog(@&quot;AFNetworkReachabilityStatus NotReachable&quot;); } else { if (sharedInstance.reachabilityStatus &lt;= AFNetworkReachabilityStatusNotReachable) { [appDelegate.common.updateUIViewController.model requestNetwork]; } NSLog(@&quot;AFNetworkReachabilityStatus Reachable&quot;); } sharedInstance.reachabilityStatus = status; }]; [[AFNetworkReachabilityManager sharedManager] startMonitoring]; })"
-            landmarkType = "8">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+CommonInstance"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

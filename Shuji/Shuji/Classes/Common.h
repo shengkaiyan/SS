@@ -16,14 +16,22 @@
     
 }
 
+//  网络状态
 @property(nonatomic, assign) AFNetworkReachabilityStatus reachabilityStatus;
 
+//  网络状态发生变化,保存需更新的界面
 @property(nonatomic, strong) NetViewController *updateUIViewController;
 
+//  拍照或选取照片
 @property(nonatomic,copy) void(^getImage)(UIImage *);
 
 @property(nonatomic,copy) void(^getTwoImage)(UIImage *, UIImage *);
 
+@property(nonatomic, strong) UIViewController *getImageViewController;
+
+- (void)toGetImage;
+
+//  单例
 +(Common *)CommonInstance;
 
 @end

@@ -8,8 +8,13 @@
 
 #import "MainViewController.h"
 #import "LoginViewController.h"
+#import "AppDelegate.h"
 
 @interface MainViewController ()
+{
+    UIImageView *_smallImage;
+    UIImageView *_bigImage;
+}
 
 @end
 
@@ -23,14 +28,60 @@
     btn.frame = CGRectMake(0, 100, 300, 40);
     [btn addTarget: self action: @selector(login) forControlEvents: UIControlEventTouchUpInside];
     [self.view addSubview: btn];
-    
     btn.backgroundColor = [UIColor redColor];
+    
+    
+    UIButton *btn2 = [UIButton buttonWithType: UIButtonTypeCustom];
+    btn2.frame = CGRectMake(0, 200, 300, 40);
+    [btn2 addTarget: self action: @selector(getProfile) forControlEvents: UIControlEventTouchUpInside];
+    [self.view addSubview: btn2];
+    btn2.backgroundColor = [UIColor redColor];
+    
+    _smallImage = [[UIImageView alloc] initWithFrame: CGRectMake(10, 300, 40, 40)];
+    [self.view addSubview: _smallImage];
+    
+    _bigImage = [[UIImageView alloc] initWithFrame: CGRectMake(100, 300, 60, 60)];
+    [self.view addSubview: _bigImage];
 }
 
 - (void)login
 {
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     [self.navigationController pushViewController: loginViewController animated: YES];
+}
+
+- (void)getProfile
+{
+    appDelegate.common.getImageViewController = self;
+    [appDelegate.common toGetImage];
+    //    [Common CommonInstance].getImage = ^(UIImage *image)
+    //    {
+    //        ivTemp.image = image;
+    //        [Common CommonInstance].viewController = nil;
+    //    };
+    
+    appDelegate.common.getTwoImage = ^(UIImage *image, UIImage *originalImage)
+    {
+        _smallImage.image = image;
+        _bigImage.image = originalImage;
+//        [Common CommonInstance].GetImageViewController = nil;
+//        
+//        NSData *thumbImageData = UIImagePNGRepresentation(image);
+//        
+//        NSString *filePath = [NSString stringWithFormat: @"%@/%@/%@_%d/edit.jpg", DOCUMENTDIRECTORY, appDelegate.account.access_uid, room.Name, room.ID];
+//        
+//        BOOL write = [thumbImageData writeToFile:filePath atomically:NO];
+//        
+//        NSData *originalImageData = UIImagePNGRepresentation(originalImage);
+        
+//        NSString *filePathOriginalImage = [NSString stringWithFormat: @"%@/%@/%@_%d/original.jpg", DOCUMENTDIRECTORY, appDelegate.account.access_uid, room.Name, room.ID];
+//        
+//        BOOL write2 = [originalImageData writeToFile:filePathOriginalImage atomically:NO];
+//        
+//        if (write && write2) {
+//            [aTableView reloadData];
+//        }
+    };
 }
 
 - (void)didReceiveMemoryWarning {
