@@ -16,4 +16,9 @@
     NSLog(@"%@ LoginModel", self);
 }
 
+- (void)login
+{
+    NSLog(@"login");
+}
+
 @end

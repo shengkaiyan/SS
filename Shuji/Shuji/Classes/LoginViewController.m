@@ -31,6 +31,11 @@
     self.model = _logingModel;
 }
 
+- (void)requestNetwork
+{
+    [_logingModel login];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

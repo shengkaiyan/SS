@@ -10,4 +10,6 @@
 
 @interface LoginModel : NetModel
 
+- (void)login;
+
 @end

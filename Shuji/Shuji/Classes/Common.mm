@@ -21,21 +21,23 @@
         
         [[AFNetworkReachabilityManager sharedManager]setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status)
          {
-         if (status <= AFNetworkReachabilityStatusNotReachable) {
-         NSLog(@"AFNetworkReachabilityStatus NotReachable");
-         }
-         else
-         {
-         if (sharedInstance.reachabilityStatus <= AFNetworkReachabilityStatusNotReachable)
-         {
-         [appDelegate.common.updateUIViewController.model requestNetwork];
-         }
-         NSLog(@"AFNetworkReachabilityStatus Reachable");
-         }
-         
-         sharedInstance.reachabilityStatus = status;
-         
+             if (status <= AFNetworkReachabilityStatusNotReachable) {
+                 NSLog(@"AFNetworkReachabilityStatus NotReachable");
+             }
+             else
+             {
+                 NSLog(@"AFNetworkReachabilityStatus Reachable");
+                 
+                 if (sharedInstance.reachabilityStatus <= AFNetworkReachabilityStatusNotReachable)
+                 {
+                     [appDelegate.common.updateUIViewController requestNetwork];
+//                     [appDelegate.common.updateUIViewController.model requestNetwork];
+                 }
+             }
+             
+             sharedInstance.reachabilityStatus = status;
          }];
+        
         [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     });
     
