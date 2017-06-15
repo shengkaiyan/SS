@@ -52,6 +52,15 @@
 
 - (void)getProfile
 {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"hello" message: @"message" preferredStyle: UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    return;
     appDelegate.common.getImageViewController = self;
     [appDelegate.common toGetImage];
     //    [Common CommonInstance].getImage = ^(UIImage *image)
@@ -64,8 +73,8 @@
     {
         _smallImage.image = image;
         _bigImage.image = originalImage;
-//        [Common CommonInstance].GetImageViewController = nil;
-//        
+        [Common CommonInstance].getImageViewController = nil;
+//
 //        NSData *thumbImageData = UIImagePNGRepresentation(image);
 //        
 //        NSString *filePath = [NSString stringWithFormat: @"%@/%@/%@_%d/edit.jpg", DOCUMENTDIRECTORY, appDelegate.account.access_uid, room.Name, room.ID];
